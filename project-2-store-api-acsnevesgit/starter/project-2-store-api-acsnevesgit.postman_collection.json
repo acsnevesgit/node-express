@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "3b2650d6-9f90-496c-8f85-ff5e5d4eedd7",
+		"name": "project-2-store-api-acsnevesgit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/products?numericFilters=price>40,rating>=4",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "featured",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "company",
+							"value": "ikea",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "e",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "name",
+							"disabled": true
+						},
+						{
+							"key": "fields",
+							"value": "name, price",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "numericFilters",
+							"value": "price>40,rating>=4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products - testing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/products/static",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"products",
+						"static"
+					],
+					"query": [
+						{
+							"key": "sort",
+							"value": "price",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

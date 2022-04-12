@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "33b4e8f4-5df1-4a21-86f6-7485726c1f87",
+		"name": "project-3-jwt-basics-acsnevesgit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dashboard",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTcsInVzZXJuYW1lIjoicGV0ZXIiLCJpYXQiOjE2NDUxMDU2MDMsImV4cCI6MTY0NzY5NzYwM30.nGI65g1Wm2F7ZLwfHJ3dmsmxOj_h8WAdZxy7RQUhE-U",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL}}/dashboard",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"peter\",\r\n    \"password\":\"secret\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/login",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
