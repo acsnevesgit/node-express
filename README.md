@@ -1,4 +1,4 @@
-<h1 align="center">Node-Express-Course</h1>
+<h1 align="center">Node-Express</h1>
 
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript)&nbsp;
 ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat&logo=node.js)&nbsp;
